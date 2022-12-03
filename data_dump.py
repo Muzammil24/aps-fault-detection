@@ -22,5 +22,3 @@ if __name__ == "__main__":
     #Insert converted json record to mongo db
     client[DATABASE_NAME][COLLECTION_NAME].insert_many(json_record)
 
-
-
