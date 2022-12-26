@@ -5,6 +5,7 @@ REQUIREMENT_FILE_NAME="requirements.txt"
 HYPHEN_E_DOT = "-e ."
 
 # def get_requirements()->List[srt]:...
+
 def get_requirements()->List[str]:
     with open(REQUIREMENT_FILE_NAME) as requirement_file:
         requirement_list = requirement_file.readlines()
@@ -19,7 +20,7 @@ setup(
     name="sensor",
     version="0.0.1",
     author="Muzammil",
-    email="muzzammil4eee@gmail.com",
+    author_email="muzzammil4eee@gmail.com",
     packages=find_packages(),
     install_requires=get_requirements(),
 )
